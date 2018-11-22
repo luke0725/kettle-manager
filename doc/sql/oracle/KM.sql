@@ -2408,11 +2408,11 @@ commit;
 prompt 17 records loaded
 prompt Loading METL_DATABASE...
 insert into METL_DATABASE (OID, OCODE, ONAME, ODESCRIBE, OORDER, SIMPLE_SPELL, FULL_SPELL, CREATE_DATE, UPDATE_DATE, CREATE_USER, UPDATE_USER, EXPAND, IS_DISABLE, FLAG1, FLAG2, ORGANIZATION_NAME, ORGANIZATION_CODE, TYPE, ACCESS_WAY, JNDI, URL, USERNAME, PASSWORD, STATUS, VALIDATION_QUERY)
-values ('559A88034DFB4F74A95169DB2A9AB0FD', 'eova', 'EOVA库', null, 20, 'EOVAK', 'EOVAKU', '20160527233602', '20160528180125', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+values ('559A88034DFB4F74A95169DB2A9AB0FD', 'eova', 'EOVA库', null, 20, 'EOVAK', 'EOVAKU', '20160527233602', '20160528180125', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
 insert into METL_DATABASE (OID, OCODE, ONAME, ODESCRIBE, OORDER, SIMPLE_SPELL, FULL_SPELL, CREATE_DATE, UPDATE_DATE, CREATE_USER, UPDATE_USER, EXPAND, IS_DISABLE, FLAG1, FLAG2, ORGANIZATION_NAME, ORGANIZATION_CODE, TYPE, ACCESS_WAY, JNDI, URL, USERNAME, PASSWORD, STATUS, VALIDATION_QUERY)
-values ('E3E0187BCA1348FCAEBC6331E5985F50', 'metl', 'METL库', null, 30, 'METLK', 'METLKU', '20160527145525', '20160527234527', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+values ('E3E0187BCA1348FCAEBC6331E5985F50', 'metl', 'METL库', null, 30, 'METLK', 'METLKU', '20160527145525', '20160527234527', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
 insert into METL_DATABASE (OID, OCODE, ONAME, ODESCRIBE, OORDER, SIMPLE_SPELL, FULL_SPELL, CREATE_DATE, UPDATE_DATE, CREATE_USER, UPDATE_USER, EXPAND, IS_DISABLE, FLAG1, FLAG2, ORGANIZATION_NAME, ORGANIZATION_CODE, TYPE, ACCESS_WAY, JNDI, URL, USERNAME, PASSWORD, STATUS, VALIDATION_QUERY)
-values ('E6FE57302AA04409AA5DC621836B1E25', 'kettle', 'kettle库', null, 40, 'KETTLEK', 'KETTLEKU', '20160527145710', '20160728153831', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+values ('E6FE57302AA04409AA5DC621836B1E25', 'kettle', 'kettle库', null, 40, 'KETTLEK', 'KETTLEKU', '20160527145710', '20160728153831', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
 commit;
 prompt 3 records loaded
 prompt Loading METL_KETTLE_LOG...

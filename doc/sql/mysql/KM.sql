@@ -1041,9 +1041,9 @@ CREATE TABLE `metl_database` (
 -- ----------------------------
 -- Records of metl_database
 -- ----------------------------
-INSERT INTO `metl_database` VALUES ('559A88034DFB4F74A95169DB2A9AB0FD', 'eova', 'EOVA库', null, '20.000000000000000000000000000000', 'EOVAK', 'EOVAKU', '20160527233602', '20160528180125', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
-INSERT INTO `metl_database` VALUES ('E3E0187BCA1348FCAEBC6331E5985F50', 'metl', 'METL库', null, '30.000000000000000000000000000000', 'METLK', 'METLKU', '20160527145525', '20160527234527', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
-INSERT INTO `metl_database` VALUES ('E6FE57302AA04409AA5DC621836B1E25', 'kettle', 'kettle库', null, '40.000000000000000000000000000000', 'KETTLEK', 'KETTLEKU', '20160527145710', '20160728153831', '超级管理员', '超级管理员', null, '0', null, null, '马进举', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+INSERT INTO `metl_database` VALUES ('559A88034DFB4F74A95169DB2A9AB0FD', 'eova', 'EOVA库', null, '20.000000000000000000000000000000', 'EOVAK', 'EOVAKU', '20160527233602', '20160528180125', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+INSERT INTO `metl_database` VALUES ('E3E0187BCA1348FCAEBC6331E5985F50', 'metl', 'METL库', null, '30.000000000000000000000000000000', 'METLK', 'METLKU', '20160527145525', '20160527234527', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
+INSERT INTO `metl_database` VALUES ('E6FE57302AA04409AA5DC621836B1E25', 'kettle', 'kettle库', null, '40.000000000000000000000000000000', 'KETTLEK', 'KETTLEKU', '20160527145710', '20160728153831', '超级管理员', '超级管理员', null, '0', null, null, '山东锋士信息技术有限公司', 'jinjuma@yeah.net', null, 'Native', null, null, null, null, '1', null);
 
 -- ----------------------------
 -- Table structure for metl_kettle_log
