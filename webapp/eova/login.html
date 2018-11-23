@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Kettle管理-登录</title>
-    <link href="/ui/login/styles.css" rel="stylesheet" />
-    <link href="/ui/login/jquery-ui-1.8.16.custom.css" rel="stylesheet">
-    <script src="/ui/js/jquery.min.js"></script>
-    <script src="/ui/login/jquery-ui-1.8.16.custom.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>锋士数据交换管理平台-登录</title>
+<link rel="stylesheet" href="/ui/login/css/style.css">
+<link rel="stylesheet" href="/ui/login/css/layui.css">
+<link href="/ui/login/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+<script src="/ui/js/jquery.min.js"></script>
+<script src="/ui/login/jquery-ui-1.8.16.custom.min.js"></script>
 </head>
 <script type="text/javascript">
-
 	function getURL(url) {
 		var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-	
+
 		xmlhttp.open("GET", url, false);
 		xmlhttp.send();
 		if (xmlhttp.readyState == 4) {
@@ -21,30 +24,34 @@
 		}
 		return false;
 	}
-	
-// 	getURL("/ui/js/jquery.min.js");
+
+	// 	getURL("/ui/js/jquery.min.js");
 
 	// 禁止登录页内嵌
-	if (window != top){
-		parent.location.href = location.href; 
+	if (window != top) {
+		parent.location.href = location.href;
 	}
-	
-	var UA = navigator.userAgent.toLowerCase();
-    var browerKernel = {
-        isWebkit: function() {
-            if (/webkit/i.test(UA)) return true;
-            else return false;
-        },
-	    isFirefox: function() {
-            if (/firefox/i.test(UA)) return true;
-            else return false;
-		}
-    }
 
-	if(!browerKernel.isWebkit()){
+	var UA = navigator.userAgent.toLowerCase();
+	var browerKernel = {
+		isWebkit : function() {
+			if (/webkit/i.test(UA))
+				return true;
+			else
+				return false;
+		},
+		isFirefox : function() {
+			if (/firefox/i.test(UA))
+				return true;
+			else
+				return false;
+		}
+	}
+
+	if (!browerKernel.isWebkit()) {
 		alert("您当前浏览器无法兼容本系统！\n推荐使用Google Chrome 浏览器！\n\n其它兼容浏览器：\n360浏览器极速模式\n搜狗高速浏览器3\n世界之窗极速版\n猎豹浏览器\nQQ浏览器\n其它浏览器请自测");
 	}
-	
+
 	$(function() {
 		$('form :input:first').focus();
 		$('form :input').keyup(function(event) {
@@ -53,78 +60,93 @@
 			}
 		});
 	});
-	
 </script>
 <body id="login">
-    <div id="wrappertop">
-    </div>
-    <div id="wrapper">
-        <div id="content">
-            <div id="header">
-				<img src="/ui/images/logo.png" alt="EOVA">
-            </div>
-            <div id="darkbanner" class="banner320">
-                <h2 style='font-family: "Microsoft YaHei"'>运营支撑系统 ┇ USER LOGIN</h2>
-            </div>
-            <div id="darkbannerwrap">
-            </div>
-            <form id="loginForm" method="post" action="/doLogin">
-            	<fieldset class="form">
-					<p>
-						<label class="loginlabel" for="user_name"> 帐号:</label> <input
-							class="logininput ui-keyboard-input ui-widget-content ui-corner-all"
-							name="loginId" id="user_name" type="text"
-							value="${login_id!''}" />
-					</p>
-					<p>
-						<label class="loginlabel" for="user_password"> 密码:</label> <span>
-							<input class="logininput ui-keyboard-input ui-widget-content ui-corner-all" name="loginPwd"
-							value="${login_pwd!''}" id="user_password" type="password" />
-						</span>
-					</p>
-					<div style="text-align: left; margin-left: 80px; margin-bottom: 5px; color: #BE1302;">
-						<b>${msg!}<b>
-					</div>
-					<div>
-					<button id="loginbtn" type="button" class="positive" name="Submit">
-                    <img src="/ui/login/key.png" />快速登录</button>
+	<div id="wrap">
+		<!--中间模块-->
+		<div class="layui-row con_box">
+			<div class="layui-col-md3">
+				<div class="left">
+					<img src="/ui/login/img/img_01.jpg">
+					<p>锋士数据交换 &nbsp;&nbsp;&nbsp;&nbsp;管理平台</p>
 				</div>
-            </fieldset>
-        </div>
-    </div>
-    <div id="wrapperbottom_branding">
-        <div id="wrapperbottom_branding_text">
-            Powered by <b><a href="http://www.eova.cn" target="dialog">EOVA</a></b> V1.5
-		</div>
-    </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".logininput").blur(function() {
-                if ($(this).val() == "") {
-                    $(this).css("border-color", "red");
-                } else {
-                    $(this).css("border-color", "#D9D6C4");
-                }
-            })
+			</div>
+			<form id="loginForm" method="post" action="/doLogin">
+				<div class="layui-col-md9">
+					<div class="right">
+						<p>USER LOGIN</p>
+						<p>用户登录</p>
+						<!--登录框-->
+						<div class="layui-row layui-col-space5 submit layui-col-space10">
+							<div class="layui-col-md12">
+								<div class="layui-row grid-demo layui-col-space15">
+									<div class="layui-col-md12">
+										<input name="loginId" id="user_name" type="text"
+											value="${login_id!''}" required lay-verify="required"
+											placeholder="请输入用户名" autocomplete="off"
+											class="logininput layui-input">
+									</div>
+								</div>
+								<div class="layui-row grid-demo layui-col-space15">
+									<div class="layui-col-md12">
+										<input name="loginPwd" value="${login_pwd!''}"
+											id="user_password" type="password" required
+											lay-verify="required" placeholder="请输入密码" autocomplete="off"
+											class="logininput layui-input">
+									</div>
+								</div>
+								<div
+									style="text-align: left; margin-left: 80px; margin-bottom: 5px; color: #BE1302;">
+									<b>${msg!}<b>
+								</div>
+								<div class="layui-row grid-demo layui-col-space15">
 
-            $("#loginbtn").click(function() {
-                var k = 0;
-                var ajaxhtml = "";
-                $(".logininput").each(function(i, obj) {
-                    if ($(obj).val().trim() == "") {
-                        k++;
-                        $(this).css("border-color", "red");
-                        $(this).focus();
-                        return false;
-                    }
-                });
-                if (k != 0) return;
-                ajaxhtml = $("#loginbtn").html();
-                $("#loginbtn").html("Loading....");
-                $("#loginbtn").attr("disabled", "disabled");
+									<div class="layui-col-md6">
+										<button id="loginbtn" name="Submit"
+											class="layui-btn btn btn_01">登录</button>
+									</div>
+									<div class="layui-col-md6">
+										<button type="reset" class="layui-btn btn btn_02">清空</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--登录框-->
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--中间模块-->
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".logininput").blur(function() {
+				if ($(this).val() == "") {
+					$(this).css("border-color", "red");
+				} else {
+					$(this).css("border-color", "#D9D6C4");
+				}
+			})
+
+			$("#loginbtn").click(function() {
+				var k = 0;
+				var ajaxhtml = "";
+				$(".logininput").each(function(i, obj) {
+					if ($(obj).val().trim() == "") {
+						k++;
+						$(this).css("border-color", "red");
+						$(this).focus();
+						return false;
+					}
+				});
+				if (k != 0)
+					return;
+				ajaxhtml = $("#loginbtn").html();
+				$("#loginbtn").html("Loading....");
+				$("#loginbtn").attr("disabled", "disabled");
 				$("#loginForm").submit();
-            })
-        });
-</script>
+			})
+		});
+	</script>
 </body>
 </html>

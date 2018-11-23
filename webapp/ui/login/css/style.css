@@ -1,0 +1,22 @@
+tubiao_intubiao_intubiao_intubiao_intubiao_intubiao_intubiao_in@charset "utf-8";
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:"微软雅黑",sans-serif;font-size:12px;}
+body{/*overflow-y: scroll;*/; overflow-x: hidden; width:100%; height: 100%; position: absolute; background:#023f9a url(../img/body_bg.jpg) 50% 100%; display: block;}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none !important;}
+a:hover,a:active,a:focus{text-decoration:none;}
+.blind{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;visibility:hidden;font-size:0; line-height:0}
+.con_box{ width:516px; height: 337px; padding:10px; background:url(../img/tm.png); display: block; position: absolute; top:50%; left: 50%; margin-top:-168px; margin-left:-258px;}
+.width{ width:177px !important;}
+.left img{ height:337px;}
+.left p{ position: absolute; width:166px; left:15px; top:25px; font-size: 24px; color: #fff;}
+.right{ width:280px;height:257px; background: #fff; float:right; padding:40px 30px;}
+.submit{ width:100%; margin-top:25px !important;}
+.submit input{ height:30px !important; font-size: 12px !important;}
+.yzm img{ width:100%;}
+.btn{ width:100% !important; height: 36px !important; margin: 0 auto; display: table; line-height: 36px !important;}
+.btn_01{ background: #4A90E2 !important;}
+.btn_02{ background: #F5A623 !important;}
