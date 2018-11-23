@@ -1,0 +1,7 @@
+/webapp/WEB-INF/classes
+*.JSCompress
+/target
+/.settings/
+/bin/
+.project
+.classpath
